@@ -4,9 +4,8 @@
 ## Depends
 
 To run this analysis two files are required:  
-(i) `rat_ins.tif` raster file produced in a similar way to the method reported in the repository **[R_SpatialAnalysis_Mapping](https://github.com/eginamalaj/R_SpatialAnalysis_Mapping)**. This is a raster file of insecticide use across the Prairie Pothole Region of Canada;
-
-(ii) Folder `catchment` with a vector file containing deliniations of 5000+ river basins. 
+1. `rat_ins.tif` raster file produced in a similar way to the method reported in the repository **[R_SpatialAnalysis_Mapping](https://github.com/eginamalaj/R_SpatialAnalysis_Mapping)**. This is a raster file of insecticide use across the Prairie Pothole Region of Canada
+2. Folder `catchment` with a vector file containing deliniations of 5000+ river basins. 
 
 R version 4.0.3
 
@@ -23,8 +22,15 @@ Initially, I produced the raster `rat_ins.tif`, which represents insecticide use
 
 Below I'll show two sets of figures produced by this analysis. Figure 1 shows the distribution when mean insecticide use is used (basically a choropleth map) and and with full rank MRF, which is pretty close to the mean map.
 
+Figure 1: Mean application per catchement and GAM with full MRF ranks for insecticide 
+![Mean_GAM](https://user-images.githubusercontent.com/54320408/104782573-0b142c80-574a-11eb-8e26-9e86b7270a6a.png)
+
 
 Figure 2 shows three sets of GAM models with 30-1000 MRF ranks. You can visually see the smoothing happening more in 30 ranks than in 1000 MRF. In comparison to Figure 1, in Figure 2 it is easier to visually identify areas which are different from neighboring locations, and the regional hotspots are more evident as a result of smoothing. 
+
+Figure 2: Different levels of smoothness for insecticide use
+
+![PMRF_range](https://user-images.githubusercontent.com/54320408/104782734-51698b80-574a-11eb-8411-aab671c1a3f7.png)
 
 
 ## References: 
