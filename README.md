@@ -5,6 +5,7 @@
 
 To run this analysis two files are required:  
 (i) `rat_ins.tif` raster file produced in a similar way to the method reported in the repository **[R_SpatialAnalysis_Mapping](https://github.com/eginamalaj/R_SpatialAnalysis_Mapping)**. This is a raster file of insecticide use across the Prairie Pothole Region of Canada;
+
 (ii) Folder `catchment` with a vector file containing deliniations of 5000+ river basins. 
 
 R version 4.0.3
